@@ -1,7 +1,8 @@
 /*********************************************************************
 ** Author: Andrew ODonald
+** ONID: odonalda
 ** Date: 1/18/2016
-** Description: 3b
+** Description: 3b - Opens a file expecting to find a list of integers, and checks for error accessing a filename.  Those integers are read by the while loop so that the file can be of any length, as each integer of the file is read it is added to the sum. The sum is written to it's own sum.txt file and the files are closed.
 *********************************************************************/
 
 #include <iostream>
@@ -20,9 +21,7 @@ int main()
 	ifstream inputFile;
 	ofstream outputFile;
 	string filename;
-	int counter;
-	int numbers;
-	int sum;
+	int counter, numbers, sum;
 	
 	//Get the filename and open
 	cout << "Please enter a filename you wish to use: " << endl;
