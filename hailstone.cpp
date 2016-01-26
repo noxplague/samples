@@ -13,7 +13,7 @@ using std::endl;
 
 int hailstone(int num) {
 
-int counter;
+	int counter;
 
 	while (num != 1) {
 		if ((num % 2) == 0)
@@ -21,7 +21,7 @@ int counter;
 		else
 			num = num * 3 + 1;
 	
-	counter++
+	counter++;
 	}
 
 return counter;
@@ -29,6 +29,8 @@ return counter;
 }
 
 int main() {
+
+	int number;
 
 	cout << "Please enter a positive integer to calculate its hailstone count:" << endl;
 	cin >> number;
