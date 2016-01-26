@@ -16,9 +16,8 @@ using std::endl;
 *              *
 **********************************************************************/
 
-void smallSort(int& smallest, int& middle, int& largest) {
+void smallSort(int &smallest, int &middle, int &largest) {
 	int smallest, middle, largest, min, max;
-	
 	
 	if (middle > smallest && middle > largest) {
 		max = middle;
@@ -40,9 +39,6 @@ void smallSort(int& smallest, int& middle, int& largest) {
 		largest = smallest;
 		smallest = min;
 	}
-	
-	
-	
 }
 
 int main() {
