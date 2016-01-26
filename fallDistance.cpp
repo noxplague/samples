@@ -4,14 +4,7 @@
 ** Date: 1/24/2016
 ** Description: 4a - fallDistance function takes a non-negative input and calculates the distance an object falls
 *********************************************************************/
-#include <iostream>
 
-using std::cin;
-using std::cout;
-using std::endl;
-
-//function
-double fallDistance(double time);
 
 /********************************************************************** 
 *        fallDistance                                                 * 
@@ -22,7 +15,16 @@ double fallDistance(double time) {
 	return 0.5 * 9.8 * (time * time);
 }
 
-//Test program
+/*Test program
+
+#include <iostream>
+
+using std::cin;
+using std::cout;
+using std::endl;
+
+//function
+double fallDistance(double time);
 
 int main() {
 	
@@ -38,3 +40,4 @@ int main() {
 	return 0;
 	
 }
+*/
