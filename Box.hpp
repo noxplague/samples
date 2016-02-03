@@ -18,11 +18,7 @@ class Box {
 	
 	public:
 		
-		Box() {  // Default constructor
-			height = 1.0;
-			width = 1.0;
-			length = 1.0;
-		}
+		Box(); // Default constructor
 		Box(double h, double w, double l);  //Prototype constructor
 		double setHeight(double);
 		double setWidth(double);
