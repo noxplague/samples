@@ -2,7 +2,10 @@
 #include <string>
 #include "BankAccount.hpp"
 
-using namespace std;
+using std::cout;
+using std::cin;
+using std::endl;
+using std::string;
 
 int main() {
 	

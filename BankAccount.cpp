@@ -69,7 +69,7 @@ double BankAccount::getCustomerBalance(){
 
 ******************************************************************/			
 void BankAccount::withdraw(double wthdrw){
-	double wthdrw;
+	
 	customerBalance = customerBalance - wthdrw;	
 }
 		
@@ -79,7 +79,7 @@ void BankAccount::withdraw(double wthdrw){
 
 ******************************************************************/			
 void BankAccount::deposit(double dep){
-	double dep;
+	
 	customerBalance = customerBalance + dep;
 			
 }
