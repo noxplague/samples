@@ -65,7 +65,9 @@ double Box::setLength(double l) {
 
 /*****************************************************************
 						Box::getVolume
-
+This function calculates the volume based on the three sides of the box
+and checks for a side with length zero which would be a 2 dimensional 
+piece of cardboard without volume.
 ******************************************************************/
 double Box::getVolume() {
 	 double volume;

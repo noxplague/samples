@@ -2,7 +2,9 @@
 ** Author: Andrew ODonald
 ** ONID: odonalda
 ** Date: 2/1/2016
-** Description: 5a -  
+** Description: 5a -  This is the box class header file it has the
+three private variables and the default & prototype constructors
+for a box object.
 *********************************************************************/
 
 //box.hpp is my box specification file

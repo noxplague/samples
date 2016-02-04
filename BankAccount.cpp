@@ -2,7 +2,9 @@
 ** Author: Andrew ODonald
 ** ONID: odonalda
 ** Date: 2/1/2016
-** Description: 5b - Bank account class implmentation file  
+** Description: 5b - Bank account class implmentation file, 
+purpose of each function described below.  Set functions explicitly
+left out in the specification
 *********************************************************************/
 
 #include "BankAccount.hpp"
