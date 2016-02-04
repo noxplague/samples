@@ -8,7 +8,7 @@
 #include "BankAccount.hpp"
 #include <string>
 
-using namespace std::string;
+
 
 /*****************************************************************
 					BankAccount::BankAccount
@@ -27,7 +27,7 @@ BankAccount::BankAccount(){
 
 
 ******************************************************************/	
-BankAccount::BankAccount(string name, string id, double bal) {
+BankAccount::BankAccount(std::string name, std::string id, double bal) {
 	customerName = name;
 	customerID = id;
 	customerBalance = bal;
@@ -38,7 +38,7 @@ BankAccount::BankAccount(string name, string id, double bal) {
 
 
 ******************************************************************/	
-string BankAccount::getCustomerName(){
+std::string BankAccount::getCustomerName(){
 	return customerName;
 	
 }
@@ -49,7 +49,7 @@ string BankAccount::getCustomerName(){
 
 ******************************************************************/			
 		
-string BankAccount::getCustomerID(){
+std::string BankAccount::getCustomerID(){
 	return customerID;
 	
 }

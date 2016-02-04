@@ -14,7 +14,7 @@ int main() {
 	cout << "Customer ID:" << account1.getCustomerID << endl;
 	cout << "Customer balance:" << account1.getCustomerBalance << endl;
 	
-	cout << "How much would you like to deposit: " endl;
+	cout << "How much would you like to deposit: " << endl;
 	cin >> userAmount;
 	BankAccount::deposit(userAmount);
 	cout << "Customer balance:" << account1.getCustomerBalance << endl;

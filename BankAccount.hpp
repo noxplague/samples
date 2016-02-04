@@ -15,22 +15,21 @@ the balance of these objects using the included fucntions.
 #define BANKACCOUNT_HPP
 
 #include <string>
-using namespace std::string;
 
 
 class BankAccount {
 	private:
-		string customerName;
-		string customerID;
+		std::string customerName;
+		std::string customerID;
 		double customerBalance;
 		
 	
 	public:
 		
 		BankAccount(); // Default constructor
-		BankAccount(string, string, double);  //Prototype constructor
-		string getCustomerName();
-		string getCustomerID();
+		BankAccount(std::string, std::string, double);  //Prototype constructor
+		std::string getCustomerName();
+		std::string getCustomerID();
 		double getCustomerBalance();
 		void withdraw(double);
 		void deposit(double);
