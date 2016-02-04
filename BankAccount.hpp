@@ -15,6 +15,8 @@ the balance of these objects using the included fucntions.
 #define BANKACCOUNT_HPP
 
 #include <string>
+using namespace std::string;
+
 
 class BankAccount {
 	private:

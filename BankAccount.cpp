@@ -8,6 +8,8 @@
 #include "BankAccount.hpp"
 #include <string>
 
+using namespace std::string;
+
 /*****************************************************************
 					BankAccount::BankAccount
 
