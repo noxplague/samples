@@ -12,7 +12,8 @@
 
 /*****************************************************************
 					BankAccount::BankAccount
-
+Here is a default "empty" BankAccount function for the default
+constructor
 
 ******************************************************************/	
 
@@ -24,7 +25,9 @@ BankAccount::BankAccount(){
 
 /*****************************************************************
 					BankAccount::BankAccount
-
+Here is the standard BankAccount constructor function (method), 
+since this specification asked for no "set" functions this function
+assigns the values to the member variables
 
 ******************************************************************/	
 BankAccount::BankAccount(std::string name, std::string id, double bal) {
@@ -35,7 +38,7 @@ BankAccount::BankAccount(std::string name, std::string id, double bal) {
 		
 /*****************************************************************
 					BankAccount::getCustomerName
-
+Standard get function for returning the customer name string
 
 ******************************************************************/	
 std::string BankAccount::getCustomerName(){
@@ -45,7 +48,7 @@ std::string BankAccount::getCustomerName(){
 
 /*****************************************************************
 					BankAccount::getCustomerID
-
+Standard get function for returning the customer ID string
 
 ******************************************************************/			
 		
@@ -56,7 +59,7 @@ std::string BankAccount::getCustomerID(){
 		
 /*****************************************************************
 					BankAccount::getCustomerBalance
-
+Standard get function for returning the customer account balance
 
 ******************************************************************/			
 double BankAccount::getCustomerBalance(){
@@ -65,7 +68,7 @@ double BankAccount::getCustomerBalance(){
 		
 /*****************************************************************
 					BankAccount::withdraw
-
+this function performs a withdrawal from the bank account balance
 
 ******************************************************************/			
 void BankAccount::withdraw(double wthdrw){
@@ -75,7 +78,7 @@ void BankAccount::withdraw(double wthdrw){
 		
 /*****************************************************************
 					BankAccount::deposit
-
+this function performs a deposit to the bank account balance
 
 ******************************************************************/			
 void BankAccount::deposit(double dep){
