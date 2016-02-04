@@ -5,14 +5,19 @@
 ** Description: 5b - Bank account class implmentation file  
 *********************************************************************/
 
+#include "BankAccount.hpp"
+#include <string>
+
 /*****************************************************************
 					BankAccount::BankAccount
 
 
 ******************************************************************/	
 
-BankAccount(){
-	
+BankAccount::BankAccount(){
+	customerName = "";
+	customerID = "";
+	customerBalance = 0.0;
 }
 
 /*****************************************************************
@@ -20,8 +25,10 @@ BankAccount(){
 
 
 ******************************************************************/	
-BankAccount(string name, string id, double bal) {
-	
+BankAccount::BankAccount(string name, string id, double bal) {
+	customerName = name;
+	customerID = id;
+	customerBalance = bal;
 }
 		
 /*****************************************************************
@@ -29,7 +36,8 @@ BankAccount(string name, string id, double bal) {
 
 
 ******************************************************************/	
-string getCustomerName(){
+string BankAccount::getCustomerName(){
+	return customerName;
 	
 }
 
@@ -39,7 +47,8 @@ string getCustomerName(){
 
 ******************************************************************/			
 		
-string getCustomerID(){
+string BankAccount::getCustomerID(){
+	return customerID;
 	
 }
 		
@@ -48,8 +57,8 @@ string getCustomerID(){
 
 
 ******************************************************************/			
-double getCustomerBalance(){
-			
+double BankAccount::getCustomerBalance(){
+	return customerBalance;		
 }
 		
 /*****************************************************************
@@ -57,8 +66,9 @@ double getCustomerBalance(){
 
 
 ******************************************************************/			
-void withdraw(double){
-			
+void BankAccount::withdraw(double wthdrw){
+	double wthdrw;
+	customerBalance = customerBalance - wthdrw;	
 }
 		
 /*****************************************************************
@@ -66,6 +76,8 @@ void withdraw(double){
 
 
 ******************************************************************/			
-void deposit(double){
+void BankAccount::deposit(double dep){
+	double dep;
+	customerBalance = customerBalance + dep;
 			
 }
