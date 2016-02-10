@@ -19,8 +19,8 @@ private:
 public:
 	Point();  //default constructor
 	Point(double, double); //Prototype constructor
-	double setXCoord();
-	double setYCoord();
+	void setXCoord();
+	void setYCoord();
 	double getXCoord();
 	double getYCoord();
 	double distanceTo(const Point&);

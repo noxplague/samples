@@ -15,15 +15,15 @@
 class LineSegment {
 
 private:
-	Point point1;
-	Point point2;
+	Point endPoint1;
+	Point endPoint2;
 	
 
 public:
 	LineSegment();  //default constructor
 	LineSegment(Point, Point); //Prototype constructor
-	Point setEnd1();
-	Point setEnd2();
+	void setEnd1();
+	void setEnd2();
 	Point getEnd1();
 	Point getEnd2();
 	double length();

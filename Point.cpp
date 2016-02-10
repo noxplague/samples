@@ -10,12 +10,12 @@ Point();  //default constructor
 	
 Point(double x, double y); //Prototype constructor
 
-double setXCoord();
+void setXCoord();
 
-double setYCoord();
+void setYCoord();
 
 double getXCoord();
 
 double getYCoord();
 
-double distanceTo(const Point &points);
+double distanceTo(const Point &distToP);
