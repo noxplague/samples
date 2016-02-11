@@ -20,12 +20,25 @@ int main() {
 	*/
 	cout << dist << endl;
 	
-	/*
-	Point p1(4.3, 7.52);
-	Point p2(-17.0, 1.5);
-	LineSegment ls1(p1, p2);
+	
+	Point p3(4.3, 7.52);
+	Point p4(-17.0, 1.5);
+	LineSegment ls1(p3, p4);
 	double length = ls1.length();
 	double slope = ls1.slope();
-	*/
 	
+	
+	cout << length <<endl;
+	cout << slope << endl;
+	
+	
+	Point p5(4.3, 7.52);
+	Point p6(4.3, 1.5);
+	LineSegment ls2(p5, p6);
+	double len2 = ls2.length();
+	double slo2 = ls2.slope();
+	
+	
+	cout << len2 <<endl;
+	cout << slo2 << endl;
 }

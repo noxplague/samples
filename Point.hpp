@@ -2,7 +2,8 @@
 ** Author: Andrew ODonald
 ** ONID: odonalda
 ** Date: 2/8/2016
-** Description: 6 - 
+** Description: 6 - This point class header file is pretty standard
+with the addition of the new "constant reference" concept.
 
 *********************************************************************/
 
@@ -21,9 +22,9 @@ public:
 	Point(double x, double y); //Prototype constructor
 	void setXCoord(double);
 	void setYCoord(double);
-	double getXCoord() const;
-	double getYCoord() const;
-	double distanceTo(const Point&);
+	double getXCoord() const; //Const so the distanceTo function has a const function to call
+	double getYCoord() const; //Const so the distanceTo function has a const function to call
+	double distanceTo(const Point&); //Function using a constant reference, both of the functions it calls are also constant
 
 };
 
