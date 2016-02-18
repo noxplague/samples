@@ -10,7 +10,7 @@ int main() {
 	
 	
 	int ARR_SIZE = 14;
-int test_Arr[ARR_SIZE] = {12,11,8,9,5,4,3,1,10,7,6,2,8,4}; //{3, 2, 9, 10, -3, -6, -3, 9, -45, 9, -3, 0};
+	int test_Arr[ARR_SIZE] = {12,11,8,9,5,4,3,1,10,7,6,2,8,4}; //{3, 2, 9, 10, -3, -6, -3, 9, -45, 9, -3, 0};
 	vector<int> output;
 	int f1 = 0;
 	int vecSize;
