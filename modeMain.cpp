@@ -17,10 +17,10 @@ int main() {
 
 	output = findMode(test_Arr, ARR_SIZE);
 	vecSize = output.size();
-	
+	/*
 	f1 = freq1(test_Arr, ARR_SIZE);
 	cout << "Frequnecy: " << f1 << endl;
-	
+	*/
 	
 	for (int index = 0; index < vecSize; index++) {
 		std::cout << output[index] << " " << endl;
