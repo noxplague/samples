@@ -5,7 +5,8 @@
 ** Description: 8 - This is the header file for the Item class
 ****************************************************************/
 
-
+#ifndef ITEM_HPP
+#define ITEM_HPP
 #include <string>
 
 using namespace std;
@@ -31,3 +32,5 @@ class Item {
 		void setPrice(double);
 		void setQuantity(int);
 };
+
+#endif
