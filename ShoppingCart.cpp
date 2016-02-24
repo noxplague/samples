@@ -27,9 +27,6 @@ double ShoppingCart::totalPrice(){
 		for (int i = 0; i < arrayEnd; i++) {
 			if (arrItem[i] != NULL)
 				total += ((arrItem[i]->Item::getQuantity()) * (arrItem[i]->Item::getPrice()));
-			else
-				i++;
-			
 		return total;
 		}
 }
