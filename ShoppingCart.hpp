@@ -6,21 +6,24 @@ Define a ShoppingCart class which contains as a data member an array of pointer-
 
 #include "Item.hpp"
 
+const int MAX_CART_SIZE = 100;
+
 class ShoppingCart {
 	
-	private:
 	
-	Item arrCart[];
-	int arrayEnd;
+	
+	private:
+		Item *arrItem[MAX_CART_SIZE];
+		int arrayEnd;
 	
 	public:
+		ShoppingCart(); //Default constructor
+		ShoppingCart(int [MAX_CART_SIZE]); // Prototype constructor
 	
-	ShoppingCart(); //Default constructor
-	ShoppingCart(Item *arrCart, int size); // Prototype constructor
-	
-	void addItem(Item *pointer);
-	double totalPrice();
-	
+		void addItem(Item *);
+		double totalPrice();
+		int arrEndPrint();
+		void printCart();
 };
 
 #endif

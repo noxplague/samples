@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string>
 #include "Item.hpp"
+#include "ShoppingCart.hpp"
 
 using namespace std;
 
@@ -13,6 +14,34 @@ int main() {
 	Item c("capybara", 4.5, 6);
 	Item d("dirigible", 0.05, 16);
 	Item e;
+	
+	int cartSize;
+	
+	ShoppingCart sc2;
+	
+	
+	
+	cout << sc2.ShoppingCart::arrEndPrint() << endl;
+	
+	ShoppingCart sc1;
+    sc1.addItem(&a);
+    sc1.addItem(&b);
+    sc1.addItem(&c);
+    sc1.addItem(&d);
+    
+	cartSize = sc1.ShoppingCart::arrEndPrint();
+	
+	cout << "Total cart items: " << cartSize << endl; 
+	//cout << sc1 << endl;
+	
+	
+	//  This checks that totalPrice works
+	double diff = sc1.totalPrice();
+	cout << "The total cost of shopping cart: " << diff << endl;
+	
+	sc1.ShoppingCart::printCart();
+	
+	/*  This checks that the Item objects initialize correctly
 	
 	string name1 = a.Item::getName();
 	cout << name1 << endl;
@@ -58,7 +87,7 @@ int main() {
 	
 	int q5 = e.Item::getQuantity();
 	cout << q5 << endl;
-    
+    */
     
     return 0;
       
