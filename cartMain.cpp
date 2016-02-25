@@ -15,13 +15,13 @@ int main() {
 	Item d("dirigible", 0.05, 16);
 	Item e;
 	
-	int cartSize;
+	//int cartSize;
 	
-	ShoppingCart sc2;
+	//ShoppingCart sc2;
 	
 	
 	
-	cout << sc2.ShoppingCart::arrEndPrint() << endl;
+	//cout << sc2.ShoppingCart::arrEndPrint() << endl;
 	
 	ShoppingCart sc1;
     sc1.addItem(&a);
@@ -29,9 +29,9 @@ int main() {
     sc1.addItem(&c);
     sc1.addItem(&d);
     
-	cartSize = sc1.ShoppingCart::arrEndPrint();
+	//cartSize = sc1.ShoppingCart::arrEndPrint();
 	
-	cout << "Total cart items: " << cartSize << endl; 
+	//cout << "Total cart items: " << cartSize << endl; 
 	//cout << sc1 << endl;
 	
 	
@@ -39,7 +39,7 @@ int main() {
 	double diff = sc1.totalPrice();
 	cout << "The total cost of shopping cart: " << diff << endl;
 	
-	sc1.ShoppingCart::printCart();
+	//sc1.ShoppingCart::printCart();
 	
 	/*  This checks that the Item objects initialize correctly
 	
