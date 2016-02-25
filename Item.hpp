@@ -21,7 +21,7 @@ class Item {
 	public:
 	
 		Item(); //default constructor
-		Item(string n, double p, int q); // Prototype
+		Item(string n, double p, int q); // Prototype constructor
 	
 		//Getters
 		string getName();
