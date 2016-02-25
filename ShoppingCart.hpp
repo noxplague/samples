@@ -22,12 +22,12 @@ class ShoppingCart {
 	
 	public:
 		ShoppingCart(); //Default constructor
-		ShoppingCart(int [MAX_CART_SIZE]); // Prototype constructor
+		
 	
 		void addItem(Item *);
 		double totalPrice();
-		//int arrEndPrint();  For testing purposes
-		//void printCart();   For testing purposes
+		//int arrEndPrint();  //For testing purposes
+		//void printCart();   //For testing purposes
 };
 
 #endif

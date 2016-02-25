@@ -25,11 +25,7 @@ ShoppingCart::ShoppingCart(){ //Default constructor
 			arrItem[i] = NULL;
 		arrayEnd = 0;
 } 
-/*
-ShoppingCart::ShoppingCart(Item *arrCart, int size) { // Prototype constructor
-		
-} 
-*/	
+
 
 /*****************************************************************
 					ShoppingCart::addItem
@@ -51,16 +47,30 @@ void ShoppingCart::addItem(Item *pointer){
 This function returns the total price of all the items in the cart.
 To do this it iterates through all items in the array and adds the quantity multiplied by the price to the total.  It checks to make sure it doesn't try adding a NULL value and cause a segmentation fault.
 ******************************************************************/
+
 double ShoppingCart::totalPrice(){
 		double total = 0.0;
-		for (int i = 0; i < arrayEnd; i++) {
-			if (arrItem[i] != NULL)
-				total += ((arrItem[i]->Item::getQuantity()) * (arrItem[i]->Item::getPrice()));
+		
+			for (int i = 0; i < arrayEnd; i++) {
+				total = total + (arrItem[i]->Item::getQuantity() * arrItem[i]->Item::getPrice());
+			}
 		return total;
-		}
 }
 
-/*  These two functions were for testing purposes to check the contents of shopping cart.
+/* A while loop works, but I imagine a for loop is better in case later we add functions that enable removing items.
+
+double ShoppingCart::totalPrice(){
+		double total = 0.0;
+		int i = 0;
+			while (arrItem[i] != NULL) {
+				total = total + (arrItem[i]->Item::getQuantity() * arrItem[i]->Item::getPrice());
+			i++;
+			}
+		return total;
+}
+
+
+// These two functions were for testing purposes to check the contents of shopping cart.
 
 int ShoppingCart::arrEndPrint() {
 	return arrayEnd;
