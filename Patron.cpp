@@ -55,11 +55,12 @@ void Patron::addBook(Book* b) {
 
 ******************************************************************/
 void Patron::removeBook(Book* b) {
-	for (int i = 0; i < checkedOutBooks.size(); i++) {
+	int offSet;
+	for (i; i < checkedOutBooks.size(); i++) {
 		if (b = checkedOutBooks[i])
-			int  offSet = i;
+			offSet = i;
 	}	
-	checkedOutBooks.erase(checkedOutBooks.begin()+i);
+	checkedOutBooks.erase(checkedOutBooks.begin() + offSet);
    
 }
 /*****************************************************************
