@@ -60,7 +60,7 @@ int main () {
 	 for (int index = 0; index < vecSize; index++) 
 		std::cout << output[index] << " " << endl; 
 	
-	// p1.Patron::removeBook(&b1);
+	 p1.Patron::removeBook(&b1);
 	 vecSize = output.size();
 	 for (int index = 0; index < vecSize; index++) 
 		std::cout << output[index] << " " << endl;
