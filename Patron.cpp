@@ -53,7 +53,7 @@ void Patron::addBook(Book* b) {
 /*****************************************************************
 					Patron::removeBook
 
-******************************************************************/
+******************************************************************
 void Patron::removeBook(Book* b) {
 	checkedOutBooks.erase(checkedOutBooks.begin(b));
    
