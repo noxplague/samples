@@ -18,7 +18,7 @@ using namespace std;
     Patron::Patron(std::string idn, std::string n) {
     	idNum = idn;
     	name = n;
-    	fineAmount = 0;
+    	fineAmount = 0.0;
     }
 /*****************************************************************
 					Patron::getIdNum
@@ -57,10 +57,10 @@ void Patron::addBook(Book* b) {
 void Patron::removeBook(Book* b) {
 	int offSet;
 	for (int i = 0; i < checkedOutBooks.size(); i++) {
-		if (b = checkedOutBooks[i])
+		if (b == checkedOutBooks[i])
 			offSet = i;
 	}	
-	checkedOutBooks.erase(checkedOutBooks.begin() + offSet);
+	checkedOutBooks.erase(checkedOutBooks.begin()+offSet);
    
 }
 /*****************************************************************

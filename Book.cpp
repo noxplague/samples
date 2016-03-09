@@ -22,7 +22,7 @@ Book::Book(string idc, string t, string a) {
 	setLocation(ON_SHELF);
 	setCheckedOutBy(NULL);
 	setRequestedBy(NULL);
-	setDateCheckedOut(NULL);
+	setDateCheckedOut(0);
 	
 }
 
