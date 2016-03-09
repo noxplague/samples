@@ -28,7 +28,7 @@ Book::Book(string idc, string t, string a) {
 
 /*****************************************************************
 					Book:getCheckOutLength
-
+Returns check out length
 ******************************************************************/
 
 int Book::getCheckOutLength() {

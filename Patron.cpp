@@ -40,19 +40,18 @@ using namespace std;
 
 ******************************************************************/     
 vector<Book*> Patron::getCheckedOutBooks() {
-	//for (int i = 0; i < checkedOutBooks.sizeof(); i++)
 		return checkedOutBooks;
 }
 /*****************************************************************
 					Patron::addBook
-
+Uses the push_back function to add to the vector
 ******************************************************************/ 
 void Patron::addBook(Book* b) {
 	checkedOutBooks.push_back(b);
 }
 /*****************************************************************
 					Patron::removeBook
-
+Goes through the vector and finds the correct book before removing
 ******************************************************************/
 void Patron::removeBook(Book* b) {
 	int offSet;
@@ -72,7 +71,8 @@ double Patron::getFineAmount() {
 }
 /*****************************************************************
 					Patron::amendFine
-
+Takes the current amount and adds the new fine to it.  Relies oneway
+Library for the incrementer. 
 ******************************************************************/
 void Patron::amendFine(double amount) {
 	fineAmount =  fineAmount + amount;

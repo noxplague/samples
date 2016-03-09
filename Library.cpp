@@ -78,9 +78,12 @@ string Library::checkOutBook(std::string pID, std::string bID) {
 			offSet = i;
 	}
 		status = holdings[offSet]->Book::getLocation();
+			//Checked out
 			if (status == CHECKED_OUT)
 				return "Book already checked out!";
+			//on hold
 			else if (status == ON_HOLD_SHELF) {
+				//on hold by person trying to check it out
 				if (patron == holdings[offSet]->Book::getRequestedBy()) {
 					holdings[offSet]->Book::setDateCheckedOut(currentDate);
 					holdings[offSet]->Book::setCheckedOutBy(patron);
@@ -90,10 +93,12 @@ string Library::checkOutBook(std::string pID, std::string bID) {
 					
 					return "Check out successful!";
 				}
+				//on hold and a different patron trying to check out
 				else	
 					return "Book on hold by another patron.";
 			}
-			else
+			//book is on shelf and is checked out
+			else {
 				holdings[offSet]->Book::setDateCheckedOut(currentDate);
 				holdings[offSet]->Book::setCheckedOutBy(patron);
 				holdings[offSet]->Book::setLocation(CHECKED_OUT);
@@ -101,6 +106,7 @@ string Library::checkOutBook(std::string pID, std::string bID) {
 				patron->Patron::addBook(holdings[offSet]);
 				
 				return "Check out successful!";
+			}
 }
 
 /*****************************************************************
